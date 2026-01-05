@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CHRISYAN</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    header {
+      background: #2196F3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      width: 300px; /* manual size */
+      border-radius: 10px;
+    }
+
+    button {
+      background: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    h3 {
+      color: #2196F3;
+      margin-top: 30px;
+    }
+
+    .blog {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 15px auto;
+      width: 80%;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .blog h4 {
+      margin-bottom: 5px;
+    }
+
+    input[type=text] {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .blog {
+    width: 95%;
+    padding: 10px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  input[type=text] {
+    width: 90%;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>CHRISYAN</h1>
+    <p>Thats A Blogs Platform</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- SEARCH BOX -->
+  <div style="text-align:center; margin:20px;">
+    <input type="text" id="searchInput" placeholder="Search blogs..." onkeyup="searchBlogs()">
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <h2>About Me</h2>
+    <p>Thats My First Website</p>
+
+    <!-- IMAGE -->
+    <img src="images/photo1.jpg" alt="unnamed.jpg" width="300">
+
+    <br><br>
+
+    <!-- BUTTON -->
+    <button>Click Me</button>
+
+    <!-- BLOGS -->
+    <div id="blogs">
+      <h2>Blogs</h2>
+
+      <!-- ARTICLES -->
+      <h3>Articles</h3>
+      <div class="blog">
+        <h4>Importance of Education</h4>
+        <p class="short-text">Education plays a vital role in our life...</p>
+        <p class="full-text" style="display:none;">
+          Compelling Headline: The headline should attract attention and clearly indicate what the article is about, often incorporating a primary keyword or promising a benefit (e.g., "10 Tips," "How to Guide").
+Strong Introduction: This paragraph should hook the reader's interest and introduce the main argument or topic, showcasing why the reader should continue reading.
+Structured Body: The main content develops the points. In modern articles, using subheadings, short paragraphs (2-3 sentences), bullet points, and numbered lists is crucial for readability and scannability, especially on mobile devices.
+Visuals and Media: Incorporating relevant images, infographics, or videos helps break up text, improves engagement, and can simplify complex information.
+Facts and Research: Support your claims with statistics, quotes, or short stories to build authority and trustworthiness (E-E-A-T - Experience, Expertise, Authoritativeness, and Trustworthiness).
+Clear Conclusion: Summarize the main points and leave the reader with a clear impression or a call to action (CTA), guiding them on the next steps, such as signing up for a newsletter or exploring more content. 
+The Writing Process
+Select a Topic & Audience: Choose a topic you are passionate about and identify who you are writing for to tailor your tone and style effectively.
+Research & Outline: Gather facts and quotes, then create an outline to structure your ideas logically.
+Write a Rough Draft: Focus on getting your ideas down without worrying about perfection. You can edit later.
+Edit and Refine: Read your article aloud to catch errors and improve flow. Ensure it's concise, error-free, and adheres to modern best practices like mobile optimization. 
+By following these steps, you can create engaging and valuable content that resonates with modern audiences.
+        </p>
+        <button onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <!-- ESSAYS -->
+      <h3>Essays</h3>
+      <div class="blog">
+        <h4>My Best Friend</h4>
+        <p class="short-text">A best friend is someone who supports us...</p>
+        <p class="full-text" style="display:none;">
+          A best friend is not just someone you talk to; they are the person who
+          understands your silence. For me, that person is [Friend's Name]. Our 
+          friendship isn't built on grand gestures but on the small, consistent
+          moments—the late-night conversations, the shared laughter over inside
+          jokes, and the unwavering support during difficult times.
+          What makes [Friend's Name] my best friend is their genuine nature.
+          They are the first person I call when I have good news and the first 
+          person to offer a shoulder when things go wrong. They have an incredible
+          ability to listen without judgment and provide honesty even when it’s 
+          hard to hear. Whether we are exploring new places or just sitting in 
+          comfortable silence, their presence makes every experience better.
+          In a world that is constantly changing, having a constant friend like
+          [Friend's Name] is a rare gift. They have taught me the true meaning of
+          loyalty and kindness. I am incredibly grateful for our bond and know that
+          no matter where life takes us in the future, we will always find our way
+          back to the friendship that defines who we are today.
+
+        </p>
+        <button onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <!-- LETTERS -->
+      <h3>Letters</h3>
+      <div class="blog">
+        <h4>Letter to Friend</h4>
+        <p class="short-text">Dear Ali, I hope you are fine...</p>
+        <p class="full-text" style="display:none;">
+          Dear Ali,I am writing to formally request a sick leave for two
+          days, starting from [Start Date] to [End Date], as I have developed 
+          a high fever and persistent cough. My physician has advised me to
+          take complete bed rest and medication to ensure a swift recovery
+          before returning to my professional duties. I have ensured that my
+          current high-priority tasks are either completed or handed over to
+         [Colleague's Name], who has kindly agreed to handle any urgent matters
+         in my absence. I apologize for any inconvenience caused by this 
+         short-notice request and will keep you updated on my recovery status.
+        </p>
+        <button onclick="toggleText(this)">Read More</button>
+      </div>
+
+      <!-- APPLICATIONS -->
+      <h3>Applications</h3>
+      <div class="blog">
+        <h4>Sick Leave Application</h4>
+        <p class="short-text">Respected Sir, I am suffering from fever...</p>
+        <p class="full-text" style="display:none;">
+          I am writing to formally request a sick leave for two days, starting from
+          [Start Date] to [End Date], as I have developed a high fever and persistent
+          cough. My physician has advised me to take complete bed rest and medication 
+          to ensure a swift recovery before returning to my professional duties. I have 
+          ensured that my current high-priority tasks are either completed or handed 
+          over to [Colleague's Name], who has kindly agreed to handle any urgent matters
+          in my absence. I apologize for any inconvenience caused by this short-notice
+          request and will keep you updated on my recovery status.
+        </p>
+        <button onclick="toggleText(this)">Read More</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 CHRISYAN</p>
+  </footer>
+
+  <!-- JS FUNCTIONS -->
+  <script>
+    function toggleText(btn) {
+      let blog = btn.parentElement;
+      let shortText = blog.querySelector('.short-text');
+      let fullText = blog.querySelector('.full-text');
+
+      if(fullText.style.display === "none") {
+        fullText.style.display = "block";
+        shortText.style.display = "none";
+        btn.innerText = "Show Less";
+      } else {
+        fullText.style.display = "none";
+        shortText.style.display = "block";
+        btn.innerText = "Read More";
+      }
+    }
+
+    function searchBlogs() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let blogs = document.getElementsByClassName('blog');
+
+      for (let blog of blogs) {
+        let text = blog.innerText.toLowerCase();
+        if(text.includes(input)) {
+          blog.style.display = "block";
+        } else {
+          blog.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
